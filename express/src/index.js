@@ -3,8 +3,9 @@
  */
 var express = require('express');
 var app = express();
-
 var bodyParser = require('body-parser');
+
+var Expense = require('./model/expense');
 
 app.use(express.static('webcontent')); // for static files 
 app.use(bodyParser.json()); // for parsing application/json
@@ -19,6 +20,7 @@ app.get('/hello', function(req, res) {
 
 app.post('/expense/add', function(req, res) {
 	console.log(req.body);
+	
 	res.send(true);
 });
 

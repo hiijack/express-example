@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
+<title>express example</title>
 <script type="text/javascript" src="/js/vue.js"></script>
 <script type="text/javascript" src="/js/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 </head>
 <body>
 	<div id="app">
 		<form id="expense" v-on:submit.prevent="addExpense">
 			money: <input name="money"><br>
 			comment: <input name="comment"><br>
-			time: <input name="time"><br>
+			time: <input id="time" name="time"><br>
 			<input type="submit" value="submit">
 		</form>
 	</div>
 </body>
-<script type="text/javascript" src="/expense.js"></script>
+<script type="text/javascript" src="/js/expense.js"></script>
 </html>
